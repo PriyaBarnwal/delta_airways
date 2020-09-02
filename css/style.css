@@ -1,0 +1,513 @@
+body {
+  font-family: helvetica;
+}
+
+.main-content {
+  padding-top: 19px;
+}
+
+header a img {
+  margin: 5px 0 10px 20px;
+}
+
+.custom-toggler {
+  padding: 28px 21px 0 25px;
+  float: right;
+}
+
+.custom-toggler:focus {
+  outline: 0;
+}
+
+.booking {
+  padding-top: 32px;
+  font-size: 12px;
+  float: right;
+}
+
+.booking a {
+  color: #01266C;
+}
+
+.booking a:hover {
+  text-decoration: none;
+}
+
+.booking a:last-child {
+  padding-left: 7px;
+  border-left: 1px solid #01266C;
+  margin-left: 2px;
+}
+
+.booking span {
+  color: #01266C;
+}
+
+header+div,
+footer,
+.form-heading {
+  background-color: #01266C;
+}
+
+.navigation {
+  display: flex;
+  flex-flow: column wrap;
+  padding: 10px 0;
+}
+
+.navigation a {
+  text-align: center;
+  text-decoration: none;
+  padding: 6px;
+  color: #FFFFFF;
+  font-size: 16px;
+}
+
+.navigation a:hover,
+.navigation a:active,
+.navigation a.active {
+  background: #FEDFC0;
+  color: #01266C;
+}
+
+main {
+  margin: 0 5px;
+}
+
+main .carousel-control-next {
+  justify-content: flex-end;
+}
+
+main .carousel-control-prev {
+  justify-content: flex-start;
+}
+
+main .prev-icon img,
+main .next-icon img {
+  height: 42px;
+}
+
+main h2 {
+  color: #B26F15;
+  font-size: 22px;
+  margin: 10px 0 14px;
+}
+
+main article img {
+  width: 100%;
+}
+
+main article h3 {
+  font-size: 18px;
+  color: #04256a;
+  margin: 14px 0 6px;
+}
+
+main article p {
+  font-size: 14px;
+  margin: 0 9px 25px 0;
+  line-height: 1.4;
+}
+
+aside {
+  margin: 8px 5px;
+}
+
+aside section:first-child div {
+  font-size: 0;
+}
+
+aside .form-heading {
+  width: 50%;
+  color: #FFFFFF;
+  border: 0;
+  padding: 7px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+aside .form-heading:first-child {
+  background-color: #FA9F1D;
+  color: #FFFFFF;
+}
+
+aside .lowest-fare-info {
+  background-color: #84BDDB;
+  margin-bottom: 33px;
+}
+
+aside .lowest-fare-info h2 {
+  background-color: #01266C;
+  color: #FFFFFF;
+  font-size: 18px;
+  padding: 10px 15px 8px;
+  margin: 0;
+}
+
+aside .lowest-fare-info div {
+  padding-left: 15px;
+}
+
+aside .lowest-fare-info span:first-child {
+  color: #01266C;
+  padding-top: 9px;
+  font-size: 16px;
+  display: block;
+}
+
+aside .lowest-fare-info span.price {
+  vertical-align: middle;
+}
+
+aside .lowest-fare-info span.amount {
+  font-size: 29px;
+  line-height: 1;
+  padding-bottom: 4px;
+}
+
+aside .lowest-fare-info span.rupee {
+  font-size: 47px;
+  line-height: 1;
+}
+
+aside .lowest-fare-info ul {
+  margin: 0;
+  padding: 0;
+}
+
+aside .lowest-fare-info ul li {
+  list-style-type: none;
+  font-size: 13px;
+  padding: 1px 0 4px;
+}
+
+aside .lowest-fare-info a {
+  text-align: right;
+  font-size: 11px;
+  padding: 0 15px 4px;
+  color: #000000;
+  display: block;
+}
+
+aside .lowest-fare-info a:hover {
+  text-decoration: none;
+}
+
+.custom-form * {
+  border-radius: 0;
+  font-size: 14px;
+}
+
+form {
+  background-color: #84BDDB;
+  padding: 20px 15px 22px;
+  margin-bottom: 38px;
+}
+
+form select {
+  margin: 18px 0;
+}
+
+form select:nth-child(8) {
+  margin-bottom: 3px;
+}
+
+form a {
+  padding: 6px;
+  background-color: #FFFFFF;
+}
+
+form .custom-margin {
+  margin-top: 5px;
+}
+
+form input[type="submit"] {
+  font-size: 17px;
+  color: #04256a;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+form input[type="checkbox"] {
+  margin-top: 12px;
+}
+
+form input[type="checkbox"]+label {
+  font-size: 12px;
+  margin: 11px 0 2px;
+}
+
+.custom-form select.form-control,
+input.form-control {
+  height: 39px;
+}
+
+footer {
+  color: #FFFFFF;
+  text-align: center;
+  padding: 25px 15px;
+  font-size: 13px;
+}
+
+footer p {
+  margin: 0;
+  padding: 13px 15px 0;
+}
+
+footer ul {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+footer a {
+  color: #FFFFFF;
+}
+
+footer a:hover {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  header a img {
+    margin: 10px 0 6px;
+  }
+  
+  .booking {
+    padding-top: 56px;
+    padding-right: 3px;
+  }
+  
+  .navigation {
+    justify-content: space-between;
+    padding: 0 15px;
+    flex-flow: row wrap;
+  }
+  
+  .navigation a {
+    padding: 7px 41px;
+    font-size: 15px;
+  }
+  
+  .aside-padding {
+    padding-right: 30px;
+  }
+  
+  aside {
+    margin: 0;
+  }
+  
+  aside .form-heading {
+    font-size: 17px;
+    padding: 6px;
+  }
+  
+  aside .lowest-fare-info {
+    margin-bottom: 23px;
+  }
+  
+  aside .lowest-fare-info h2 {
+    font-size: 17px;
+    padding: 9px 12px 8px;
+  }
+  
+  aside .lowest-fare-info span:first-child {
+    padding: 7px 0 3px;
+    font-size: 14px;
+  }
+  
+  aside .lowest-fare-info span.rupee {
+    font-size: 40px;
+  }
+  
+  aside .lowest-fare-info ul li {
+    font-size: 12px;
+  }
+  
+  aside .lowest-fare-info a {
+    font-size: 9px;
+    padding: 4px 10px 5px;
+  }
+  
+  aside .lowest-fare-info div {
+    padding-left: 12px;
+  }
+  
+  .custom-form * {
+    font-size: 13px;
+  }
+  
+  .custom-form select.form-control,
+  input.form-control {
+    height: 37px;
+    padding-left: 6px;
+  }
+  
+  form {
+    margin-bottom: 23px;
+    padding: 20px 10px;
+  }
+  
+  form .custom-radio {
+    margin-right: 8px;
+  }
+  
+  form select {
+    margin: 15px 0;
+  }
+  
+  form input[type="checkbox"]+label {
+    font-size: 11px;
+  }
+  
+  form input[type="submit"] {
+    font-size: 15px;
+  }
+  
+  
+  .main-padding {
+    padding-left: 0;
+  }
+  
+  main {
+    margin: 0;
+  }
+  main .custom-indicators li {
+    top: 10px;
+    height: 2px;
+    width: 15px;
+    background-color: #FFFFFF;
+  }
+  
+  main .custom-indicators .active {
+    background-color: #8496AC;
+  }
+  
+  main h2 {
+    margin: 16px 0 7px;
+  }
+  
+  main article:first-of-type {
+    padding-right: 19px;
+  }
+  
+  main article:nth-of-type(2) {
+    padding-left: 19px;
+  }
+  
+  
+  main article h3 {
+    font-size: 17px;
+    margin-top: 13px;
+  }
+  
+  main article p {
+    font-size: 13px;
+    line-height: 1.3;
+  }
+  
+  footer {
+    padding: 15px 15px 30px;
+    font-size: 12px;
+  }
+  
+  
+  footer ul li {
+    border-right: 1px solid #FFFFFF;
+    padding: 0 13px;
+  }
+  
+  footer ul li:last-child {
+    border-right: 0;
+    padding-right: 0;
+  }
+  
+  footer p {
+    padding: 0px;
+  }
+}
+
+@media (min-width: 992px) {
+  header a img {
+    margin: 0 0 14px;
+  }
+  
+  .booking {
+    padding-top: 46px;
+    font-size: 13px;
+  }
+  
+  .aside-padding {
+    padding-right: 22px;
+  }
+  
+  aside .lowest-fare-info {
+    margin-bottom: 33px;
+  }
+  
+  aside .lowest-fare-info h2 {
+    font-size: 18px;
+  }
+  
+  aside .lowest-fare-info span:first-child {
+    font-size: 16px;
+  }
+  
+  aside .lowest-fare-info span.rupee {
+    font-size: 42px;
+  }
+  
+  form select {
+    margin: 16px 0;
+  }
+  
+  form input[type="checkbox"]+label {
+    font-size: 12px;
+  }
+  
+  .main-padding {
+    padding-left: 8px;
+  }
+  
+  main h2 {
+    margin: 20px 0 14px;
+    font-size: 21px;
+  }
+  
+  main article:first-of-type {
+    padding-right: 15px;
+  }
+  
+  main article:last-of-type(2) {
+    padding-left: 15px;
+  }
+  
+  main article h3 {
+    font-size: 18px;
+    margin-top: 21px;
+  }
+  
+  main article p {
+    line-height: 1.4;
+  }
+  
+  
+  main .prev-icon img,
+  main .next-icon img {
+    height: 62px;
+  }
+  
+  footer {
+    padding-top: 18px;
+  }
+  
+  footer ul li {
+    padding: 0 20px;
+  }
+}
+
+
+/*# sourceMappingURL=style.css.map */

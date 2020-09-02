@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Delta Airways</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="navbar-expand-md">
+      <header class="container">
+        <a href="index.html">
+          <img src="Logo.png" alt="delta airways logo">
+        </a>
+        <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#responsive-menubar" aria-controls="responsive-menubar" aria-expanded="false" aria-label="Toggle navigation">
+          <span>
+            <img src="menu.png">
+          </span>
+        </button>
+        <div class="booking">
+          <span class="d-none d-md-inline">+91 12345 06543</span>
+          <a href="#" class="d-md-none d-inline">Call</a>
+          <a href="#">Book Now</a>
+        </div>
+      </header>
+      <div class="collapse navbar-collapse container-fluid" id="responsive-menubar">
+        <nav class="navigation container">
+          <a href="#" class="active">Home</a>
+          <a href="#">About</a>
+          <a href="#">Offers</a>
+          <a href="#">Services</a>
+          <a href="#">Contacts</a>
+        </nav>
+      </div>
+    </div>
+    <div class="container main-content">
+      <div class="row">
+        <aside class="aside-padding col-md-4 col-lg-3 order-2 order-md-1">
+          <section>
+            <div>
+              <button class="form-heading" >Flight</button>
+              <button class="form-heading" >Hotel</button>
+            </div>
+            <form class="custom-form">
+              <div class="form-check-inline custom-radio">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="Roundtrip-option" value="option1">
+                <label class="form-check-label" for="Roundtrip-option">Round Trip</label>
+              </div>
+              <div class="form-check-inline custom-radio">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="Oneway-option" value="option2" checked>
+                <label class="form-check-label" for="Oneway-option">One Way</label>
+              </div>
+              <select class="form-control custom-margin" id="source" size="1">
+                <option>From</option>
+                <option>Kolkata</option>
+                <option>Chennai</option>
+                <option>Mumbai</option>
+                <option>Delhi</option>
+              </select>
+              <select class="form-control" id="Destination" size="1">
+                <option>To</option>
+                <option>Kolkata</option>
+                <option>Chennai</option>
+                <option>Mumbai</option>
+                <option>Delhi</option>
+              </select>
+              <div class="input-group">
+                <input type="text" class="form-control border-0" id="departure_date" value=" Depart Date">
+                <a href="#">
+                  <img src="calendar.JPG" alt="calendar icon">
+                </a>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="farecheck">
+                <label class="form-check-label" for="farecheck">Lowest Fare / Flexible travel</label>
+              </div>
+              <select class="form-control" id="count-adults" size="1">
+                <option>Adult</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+              <select class="form-control" id="count-children" size="1">
+                <option>Child</option>
+                <option>0</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="Promocodecheck">
+                <label class="form-check-label" for="Promocodecheck">Apply promo code</label>
+              </div>
+              <input type="submit" value="Search" class="form-control text-center ">
+            </form>
+          </section>
+          <section class="lowest-fare-info">
+            <h2>Cheapest Fare</h2>
+            <div>
+              <span>Fares as low as</span>
+              <span class="price rupee">&#8377</span>
+              <span class="price amount"> 2146/-*</span>
+              <ul>
+                <li>Mumbai - Bengaluru</li>
+                <li>Kolkata - Ahmedabad</li>
+                <li>Kochi - Pune</li>
+                <li>Delhi - Kolkata</li>
+              </ul>
+              <a href="#">*Conditions apply</a>
+            </div>
+          </section>
+        </aside>
+        <main class="main-padding col-md-8 col-lg-9 order-1 order-md-2">
+          <section id="Indicators" class="carousel slide d-none d-md-block" data-ride="carousel">
+            <ol class="carousel-indicators custom-indicators">
+              <li data-target="#Indicators" data-slide-to="0"></li>
+              <li data-target="#Indicators" data-slide-to="1" class="active"></li>
+              <li data-target="#Indicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item">
+                <img class="d-block w-100" src="Slide.png" alt="First slide">
+              </div>
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="Slide.png" alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="Slide.png" alt="Third slide">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#Indicators" role="button" data-slide="prev">
+              <span class="prev-icon">
+                <img src="arrow_left.jpg" class="img-fluid">
+              </span>
+            </a>
+            <a class="carousel-control-next" href="#Indicators" role="button" data-slide="next">
+              <span class="next-icon">
+                <img src="arrow_right.jpg" class="img-fluid">
+              </span>
+            </a>
+          </section>
+          <section>
+            <h2>About our Airways</h2>
+            <div class="row">
+              <article class="col-md-6 about-1">
+                <img src="Image_1.png" alt="travel with care" class="img-fluid">
+                <h3>Travel in extra compfort</h3>
+                <p>Along with your return ticket beyond Singapore, you can redeem a Rs 22,000 Voucher in transit up to 31 March 2017, for use at all participating shops, restaurants and the Ambassador Transit Lounge when you transit at Delta Airport or use at all participating shops, restaurants and the Ambassador Transit Lounge when you transit at Delta Airport.</p>
+              </article>
+              <article class="col-md-6 about-2">
+                <img src="Image_2.png" alt="travel with care" class="img-fluid">
+                <h3>Special experience with us</h3>
+                <p>Our spacious Premium Business Class invites you to sink into our lavishly designed seats with greater width and more legroom in an exclusive 1-1 cabin. Pre-order from our Book the Cook menu, enjoy a great selection of in-flight entertainment, more legspace & more baggage allowance, earn KrisFlyer miles at 110% of  the actual miles, and more.</p>
+              </article>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+    <footer class="container-fluid">
+      <div class="container">
+        <ul class="float-md-right">
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
+          <li>
+            <a href="#">Offers</a>
+          </li>
+          <li>
+            <a href="#">Services</a>
+          </li>
+          <li>
+            <a href="#">Contacts</a>
+          </li>
+        </ul>
+        <p class="float-md-left">&COPY;Copyright 2010-2016, Delta Airways. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

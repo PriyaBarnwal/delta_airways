@@ -1,0 +1,524 @@
+$most-used-color: #01266C;
+body {
+  font-family: helvetica;
+}
+
+.main-content {
+  padding-top: 19px;
+}
+
+header a img{
+    margin: 5px 0 10px 20px;
+}
+
+.custom-toggler {
+    padding: 28px 21px 0 25px;
+    float: right;
+    &:focus{
+      outline:0;
+    }
+}
+
+.booking{  
+    padding-top: 32px;
+    font-size: 12px;
+    float: right;
+    
+  a{
+    color: $most-used-color;
+    
+    &:hover{
+      text-decoration: none;
+    }
+    
+    &:last-child{
+      padding-left: 7px;
+      border-left: 1px solid $most-used-color;
+      margin-left: 2px;
+    }
+  }
+  span{
+    color: $most-used-color;
+  }
+}
+
+header+div, footer, .form-heading {
+  background-color: $most-used-color;
+}
+
+.navigation {
+  display: flex;
+  flex-flow: column wrap;
+  padding: 10px 0;
+  
+  a { 
+    text-align: center;
+    text-decoration: none;
+    padding: 6px;
+    color: #FFFFFF;
+    font-size: 16px;
+    
+    &:hover,&:active,&.active {
+      background: #FEDFC0;
+      color: $most-used-color;
+    }
+  }
+}
+
+main {
+  margin: 0 5px;
+  
+  .carousel-control-next {
+    justify-content: flex-end;
+  }
+  
+  .carousel-control-prev {
+    justify-content: flex-start;
+  }
+  
+  .prev-icon, .next-icon {
+    img {
+      height: 42px;
+    }
+  }
+  
+  h2 {
+    color: #B26F15;
+    font-size: 22px;
+    margin: 10px 0 14px;
+  }
+  
+  article {
+    img {
+      width: 100%;
+    }
+    
+    h3 {
+      font-size: 18px;
+      color: #04256a;
+      margin: 14px 0 6px;
+    }
+    
+    p {
+      font-size: 14px;
+      margin: 0 9px 25px 0;
+      line-height: 1.4;
+    }
+  }
+}
+
+aside{
+  margin: 8px 5px;
+  
+  section:first-child div{
+    font-size: 0;
+  }
+  
+  .form-heading {
+    width: 50%;
+    color: #FFFFFF;
+    border:0;
+    padding: 7px;
+    font-size: 18px;
+    cursor: pointer;
+    
+    &:first-child{
+      background-color: #FA9F1D;
+      color: #FFFFFF;
+    }
+  }
+  
+  .lowest-fare-info {
+    background-color: #84BDDB;
+    margin-bottom: 33px;
+    
+    h2{
+      background-color: $most-used-color;
+      color: #FFFFFF;
+      font-size: 18px;
+      padding: 10px 15px 8px;
+      margin: 0;
+    }
+    
+    div{
+      padding-left: 15px;
+    }
+    
+    span {
+      &:first-child {
+        color: $most-used-color;
+        padding-top: 9px;
+        font-size: 16px;
+        display: block;
+      }
+      
+      &.price{
+        vertical-align: middle;
+      }
+      
+      &.amount {
+        font-size: 29px;
+        line-height: 1;
+        padding-bottom: 4px;
+      }
+      
+      &.rupee {
+          font-size: 47px;
+          line-height: 1;
+        }
+    }
+    
+    ul{
+      margin:0;
+      padding:0;
+      
+      li{
+        list-style-type: none;
+        font-size: 13px;
+        padding: 1px 0 4px;
+      }
+    }
+    
+    a{
+      text-align: right;
+      font-size: 11px;
+      padding: 0 15px 4px;
+      color: #000000;
+      display: block;
+      
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.custom-form *{
+  border-radius: 0;
+  font-size: 14px;
+}
+
+form {
+  background-color: #84BDDB;
+  padding: 20px 15px 22px;
+  margin-bottom: 38px;
+  
+  select {
+    margin: 18px 0;
+  
+    &:nth-child(8){
+      margin-bottom: 3px;
+    }
+  }
+
+  a {
+    padding: 6px;
+    background-color:#FFFFFF;
+  }
+   
+  .custom-margin {
+    margin-top: 5px;
+  }
+  
+  input[type="submit"] {
+    font-size: 17px;
+    color: #04256a;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  input[type="checkbox"] {
+    margin-top: 12px;
+    
+    &+label{
+      font-size: 12px;
+      margin: 11px 0 2px;
+    }
+  }
+}
+
+.custom-form select.form-control, input.form-control{
+  height: 39px;
+}
+
+footer {
+  color: #FFFFFF;
+  text-align: center;
+  padding: 25px 15px;
+  font-size: 13px;
+  
+  p {
+    margin: 0;
+    padding: 13px 15px 0;
+  }
+  
+  ul {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  a {
+    color: #FFFFFF;
+    
+    &:hover{
+      color: #FFFFFF;
+      text-decoration: none;
+    }
+  } 
+}
+
+@media(min-width:768px){
+  
+  header a img {
+    margin: 10px 0 6px;
+  }
+  
+  .booking {
+    padding-top: 56px;
+    padding-right: 3px;
+  }
+  
+  .navigation {
+    justify-content: space-between;
+    padding: 0 15px;
+    flex-flow: row wrap;
+    
+    a {
+      padding: 7px 41px;
+      font-size: 15px;
+    }
+  }
+  
+  .aside-padding {
+    padding-right: 30px;
+  }
+  
+  aside {
+    margin: 0;
+    
+    .form-heading {
+      font-size: 17px;
+      padding: 6px;
+    }
+    
+    .lowest-fare-info{
+      margin-bottom: 23px;
+      
+      h2{
+        font-size: 17px;
+        padding: 9px 12px 8px;
+      }
+      
+      span{
+        &:first-child{
+          padding: 7px 0 3px;
+          font-size: 14px;
+        }
+        
+        &.rupee{
+          font-size: 40px;
+        }
+      }
+      
+      ul li{
+        font-size: 12px;
+      }
+      
+      a{
+        font-size: 9px;
+        padding: 4px 10px 5px;
+      }
+      
+      div{
+        padding-left: 12px;
+      }
+    }
+  }
+  
+  .custom-form * {
+    font-size: 13px;
+  }
+  
+  .custom-form select.form-control, input.form-control {
+      height: 37px;
+      padding-left: 6px;
+  }
+  
+  form{
+    margin-bottom: 23px;
+    padding: 20px 10px;
+    
+    .custom-radio{
+      margin-right: 8px;
+    }
+    
+    select {
+      margin: 15px 0;
+    }
+    
+    input[type="checkbox"] + label {
+      font-size: 11px;
+    }
+    
+    input[type="submit"]{
+      font-size: 15px;
+    }
+  }
+  
+  .main-padding{
+    padding-left: 0;
+  }
+  
+  main{
+    margin: 0;
+    
+    .custom-indicators {
+      li{
+        top: 10px;
+        height: 2px;
+        width: 15px;
+        background-color: #FFFFFF;
+      }
+      
+      .active{
+        background-color: #8496AC;
+      }
+    }
+    
+    h2 {
+      margin: 16px 0 7px;
+    }
+    
+    article{
+      &:first-of-type {
+        padding-right: 19px;
+      }
+      
+      &:nth-of-type(2) {
+        padding-left: 19px;
+      }
+      
+      h3{
+      font-size: 17px;
+      margin-top: 13px;
+      }
+      
+      p{
+        font-size: 13px;
+        line-height: 1.3;
+      }
+    }
+  }
+  
+  footer {
+    padding: 15px 15px 30px;
+    font-size: 12px;
+    
+    ul li {
+      border-right: 1px solid #FFFFFF;
+      padding: 0 13px;
+      
+      &:last-child {
+        border-right: 0;
+        padding-right: 0;
+      }
+    }
+    
+    p {
+      padding: 0px;
+    }
+  }
+}
+
+@media(min-width:992px){
+  
+  header a img{
+    margin: 0 0 14px;
+  }
+  
+  .booking{
+    padding-top: 46px;
+    font-size: 13px;
+  }
+  
+  .aside-padding{
+    padding-right: 22px;
+  }
+  
+  aside{ 
+    .lowest-fare-info {
+      margin-bottom: 33px;
+      
+      h2{
+        font-size: 18px;
+      }
+      
+      span{
+        &:first-child{
+          font-size: 16px;
+        }
+        
+        &.rupee {
+          font-size: 42px;
+        }
+      }
+    }
+  }
+  
+  form {
+    select {
+      margin: 16px 0;
+    }
+    
+    input[type="checkbox"] + label {
+      font-size: 12px;
+    }
+  }
+  
+  .main-padding{
+    padding-left: 8px;
+  }
+  
+  main { 
+    h2{
+      margin: 20px 0 14px;
+      font-size: 21px;
+    }
+    
+    article {
+      &:first-of-type {
+        padding-right: 15px;
+      }
+      
+      &:last-of-type(2) {
+        padding-left: 15px;
+      }
+      
+      h3{
+        font-size: 18px;
+        margin-top: 21px;
+      }
+      
+      p{
+        line-height: 1.4;
+      }
+    }
+    
+    .prev-icon, .next-icon {
+      img {
+        height: 62px;
+      }
+    }
+  }
+  
+  footer {
+    padding-top: 18px;
+    
+    ul li{
+      padding: 0 20px;
+    }
+  }
+}
